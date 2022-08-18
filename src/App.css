@@ -1,0 +1,77 @@
+body{
+  background-color: black;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.row{
+  border-bottom: 500px;
+}
+
+.movie-app {
+  /* margin-left: 0px; */
+  overflow-x:hidden;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  color: white;
+  /* border: 200px; */
+}
+
+.movie-app .row{
+  border-bottom: 200px;
+}
+
+.image-container{
+  position: relative;
+  transition: transform 0.3s;
+  width: fit-content;
+  padding: 30px;
+  /* border-bottom: 200px; */
+}
+
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.image-container:hover .overlay{
+  opacity: 1;
+  border-bottom: 200px;
+}
+
+.overlay{
+  position:absolute;
+  background: rgba(0, 0,0,0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 10px 20px 40px 60px;
+  /* text-align: center; */
+}
+
+.sp{
+  margin-top: 0px;
+
+}
+
+
+.rm{
+  margin-left: 27px;
+}
+
+.rm:hover{
+  color: rgb(255, 34, 0);
+}
+.sc{
+  margin-top: 20px;
+}
+
+img::before {
+  display: block;
+  content: '';
+  padding-top: calc(100% * 2 / 3);
+}
